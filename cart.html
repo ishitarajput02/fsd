@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #19183B;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cart {
+            max-width: 400px;
+            width: 100%;
+            background: #708993;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(31, 22, 22, 0.08);
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .cart h1 {
+            text-align: center;
+            color: #090909;
+            margin-bottom: 24px;
+        }
+        .cart-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #708993;
+        }
+        .cart-item img {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            margin-right: 12px;
+            object-fit: cover;
+        }
+        .cart-total {
+            text-align: right;
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 18px;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="cart">
+        <h1>Shopping Cart</h1>
+        <div class="cart-item">
+            <img src="https://p7.hiclipart.com/preview/1019/539/615/coca-cola-zero-soft-drink-diet-coke-coca-cola.jpg" alt="Coke">
+            <span style="flex:1;">Coke</span>
+            <span>Rs. 20</span>
+        </div>
+        <div class="cart-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKs--PMWC81lMKStoFd_XOud5Wk3Mt2EDCLQ&s" alt="Pepsi">
+            <span style="flex:1;">Pepsi</span>
+            <span>Rs. 40</span>
+        </div>
+        <div class="cart-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7B0aFrBNYZYzTEkYhcI0plnN6xyiDl4UlUQ&s" alt="Fanta">
+            <span style="flex:1;">Fanta</span>
+            <span>Rs. 30</span>
+        </div>
+        <div class="cart-total">
+            Total: Rs. 90
+        </div>
+    </div>
+</body>
+</html>
