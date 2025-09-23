@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- flipkart navbar using flexbox and gridbox with flipkart logo-->
+     
+     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #2874f0;
+            padding: 10px 20px;
+        }
+
+        .navbar .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .navbar .search-bar {
+            display: flex;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .navbar .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .navbar .search-bar button {
+            padding: 10px 20px;
+            background-color: #ff3f6c;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar .menu a:hover {
+            text-decoration: underline;
+        }
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+     </style>
+     <!-- add one more div to depict the categories in the website with photo with css -->
+        
+        <div class="navbar">
+            <div class="logo"></div>
+            <img src ="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart Logo" style="height: 20px; margin-left: 10px;">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for products">
+                <button>Search</button>
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="categories">
+            <a href="#">Electronics</a>
+            <img src="https://via.placeholder.com/150" alt="Electronics" />
+            <a href="#">Fashion</a>
+            <img src="https://via.placeholder.com/150" alt="Fashion" />
+            <a href="#">Home</a>
+            <img src="https://via.placeholder.com/150" alt="Home" />
+            <a href="#">Books</a>
+            <img src="https://via.placeholder.com/150" alt="Books" />
+        </div>
+    </body>
+</html>

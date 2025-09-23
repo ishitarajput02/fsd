@@ -15,64 +15,92 @@
             align-items: center;
             justify-content: center;
         }
-        .cart {
-            max-width: 400px;
-            width: 100%;
-            background: #708993;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(31, 22, 22, 0.08);
-            padding: 24px;
+        .products {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(31,22,22,0.10);
+            width: 220px;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            align-items: center;
+            padding: 20px 16px 16px 16px;
+            gap: 12px;
         }
-        .cart h1 {
-            text-align: center;
-            color: #090909;
-            margin-bottom: 24px;
-        }
-        .cart-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 10px 0;
-            border-bottom: 1px solid #708993;
-        }
-        .cart-item img {
-            width: 40px;
-            height: 40px;
-            border-radius: 6px;
-            margin-right: 12px;
+        .product-card img {
+            width: 90px;
+            height: 90px;
+            border-radius: 8px;
             object-fit: cover;
         }
-        .cart-total {
-            text-align: right;
-            font-weight: bold;
+        .product-title {
             font-size: 18px;
-            margin-top: 18px;
-            color: #222;
+            font-weight: bold;
+            color: #19183B;
+            margin: 0;
+        }
+        .product-price {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .card-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .card-btn {
+            background: #19183B;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 6px 14px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .card-btn.secondary {
+            background: #708993;
+            color: #19183B;
+        }
+        .card-btn:hover {
+            background: #222266;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <div class="cart">
-        <h1>Shopping Cart</h1>
-        <div class="cart-item">
+    <div class="products">
+        <div class="product-card">
             <img src="https://p7.hiclipart.com/preview/1019/539/615/coca-cola-zero-soft-drink-diet-coke-coca-cola.jpg" alt="Coke">
-            <span style="flex:1;">Coke</span>
-            <span>Rs. 20</span>
+            <div class="product-title">Coke</div>
+            <div class="product-price">Rs. 20</div>
+            <div class="card-buttons">
+                <button class="card-btn">Buy</button>
+                <button class="card-btn secondary">Add to Wishlist</button>
+            </div>
         </div>
-        <div class="cart-item">
+        <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKs--PMWC81lMKStoFd_XOud5Wk3Mt2EDCLQ&s" alt="Pepsi">
-            <span style="flex:1;">Pepsi</span>
-            <span>Rs. 40</span>
+            <div class="product-title">Pepsi</div>
+            <div class="product-price">Rs. 40</div>
+            <div class="card-buttons">
+                <button class="card-btn">Buy</button>
+                <button class="card-btn secondary">Add to Wishlist</button>
+            </div>
         </div>
-        <div class="cart-item">
+        <div class="product-card">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7B0aFrBNYZYzTEkYhcI0plnN6xyiDl4UlUQ&s" alt="Fanta">
-            <span style="flex:1;">Fanta</span>
-            <span>Rs. 30</span>
-        </div>
-        <div class="cart-total">
-            Total: Rs. 90
+            <div class="product-title">Fanta</div>
+            <div class="product-price">Rs. 30</div>
+            <div class="card-buttons">
+                <button class="card-btn">Buy</button>
+                <button class="card-btn secondary">Add to Wishlist</button>
+            </div>
         </div>
     </div>
 </body>
